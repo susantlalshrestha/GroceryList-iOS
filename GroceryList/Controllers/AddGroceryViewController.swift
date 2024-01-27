@@ -15,11 +15,6 @@ class AddGroceryViewController: UIBaseViewController, UIImagePickerControllerDel
     
     var imagePicker = UIImagePickerController()
 
-    //reference to the image stored on Firebase
-    var imgRef : StorageRE {
-        return Storage.storage().reference().child("Images")
-    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,8 +51,5 @@ class AddGroceryViewController: UIBaseViewController, UIImagePickerControllerDel
             showError(title: "Empty Field", message: "Please enter the grocery name")
             return
         }
-        
-        let uploadRef = imgRef.child(filename)
-
     }
 }
