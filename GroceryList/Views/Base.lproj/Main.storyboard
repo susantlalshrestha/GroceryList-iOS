@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yd3-OH-HbH">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="GroceryList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grocr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOC-iV-b8d" userLabel="lblGrocr">
+                                <rect key="frame" x="0.0" y="131" width="390" height="88"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="64"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KdO-Lp-3ES" userLabel="tfEmail">
+                                <rect key="frame" x="40" y="299" width="310" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YtD-oH-fxW" userLabel="tfPassword">
+                                <rect key="frame" x="40" y="353" width="310" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDl-px-WBM" userLabel="btnLogin">
+                                <rect key="frame" x="40" y="427" width="310" height="38.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" red="0.95092469449999995" green="0.58148521180000001" blue="0.41987168790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="loginDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ish-NI-wga"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSo-zA-vwB" userLabel="btnSignup">
+                                <rect key="frame" x="40" y="485.66666666666669" width="310" height="38.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sign up">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Avenir-Book"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="signupDidPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Itn-eH-ps5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.28915730119999999" green="0.64925742149999999" blue="0.49063140150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UDl-px-WBM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="38i-Dg-YfM"/>
+                            <constraint firstItem="UDl-px-WBM" firstAttribute="top" secondItem="YtD-oH-fxW" secondAttribute="bottom" constant="40" id="4B7-5P-5nB"/>
+                            <constraint firstItem="YtD-oH-fxW" firstAttribute="top" secondItem="KdO-Lp-3ES" secondAttribute="bottom" constant="20" id="DVS-FN-Ap7"/>
+                            <constraint firstItem="YtD-oH-fxW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="E3a-yN-aIl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UDl-px-WBM" secondAttribute="trailing" constant="40" id="I44-m5-VNQ"/>
+                            <constraint firstItem="KdO-Lp-3ES" firstAttribute="top" secondItem="cOC-iV-b8d" secondAttribute="bottom" constant="80" id="PUG-hv-jZq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KdO-Lp-3ES" secondAttribute="trailing" constant="40" id="SEX-Sc-HtX"/>
+                            <constraint firstItem="iSo-zA-vwB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="WaQ-kS-eGy"/>
+                            <constraint firstItem="cOC-iV-b8d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cqj-kZ-X2l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iSo-zA-vwB" secondAttribute="trailing" constant="40" id="fSi-wh-MsD"/>
+                            <constraint firstItem="cOC-iV-b8d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="fnQ-pO-c4o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cOC-iV-b8d" secondAttribute="trailing" id="oDE-MS-FWp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YtD-oH-fxW" secondAttribute="trailing" constant="40" id="oq2-mU-ESx"/>
+                            <constraint firstItem="iSo-zA-vwB" firstAttribute="top" secondItem="UDl-px-WBM" secondAttribute="bottom" constant="20" id="qvq-eD-a1w"/>
+                            <constraint firstItem="KdO-Lp-3ES" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="tbY-Za-IZ1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QeE-GO-DPn"/>
+                    <connections>
+                        <outlet property="tfEmail" destination="KdO-Lp-3ES" id="c3g-9E-KPH"/>
+                        <outlet property="tfPassword" destination="YtD-oH-fxW" id="FM3-ac-doJ"/>
+                        <segue destination="Uwc-zh-uvI" kind="show" identifier="segGroceryList" id="W8V-75-JUI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990.76923076923072" y="3.5545023696682461"/>
+        </scene>
+        <!--Grocery List-->
+        <scene sceneID="ZcW-CM-BbU">
+            <objects>
+                <viewController id="Uwc-zh-uvI" customClass="GroceryListViewController" customModule="GroceryList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G5h-uo-397">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NhM-zf-uCo" userLabel="tvGroceryList">
+                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KG5-3W-1Mc" userLabel="tvcGroceryItem">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="120.33333587646484"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KG5-3W-1Mc" id="haQ-zT-uS9">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="120.33333587646484"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wfd-1B-mHI" userLabel="ivGroceryImage">
+                                                    <rect key="frame" x="20" y="20" width="80" height="80.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="NYp-kV-8Y2"/>
+                                                        <constraint firstAttribute="width" constant="80" id="iwO-Fg-Phm"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7I-AT-qcB" userLabel="lblGroceryName">
+                                                    <rect key="frame" x="120" y="31.000000000000004" width="230" height="58.333333333333343"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wfd-1B-mHI" firstAttribute="top" secondItem="haQ-zT-uS9" secondAttribute="top" constant="20" id="78m-ng-KWo"/>
+                                                <constraint firstItem="E7I-AT-qcB" firstAttribute="leading" secondItem="wfd-1B-mHI" secondAttribute="trailing" constant="20" id="9zX-5w-zlb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="E7I-AT-qcB" secondAttribute="bottom" constant="20" id="Ehk-tJ-j57"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="E7I-AT-qcB" secondAttribute="trailing" constant="20" id="N7P-Zn-q03"/>
+                                                <constraint firstItem="E7I-AT-qcB" firstAttribute="top" secondItem="haQ-zT-uS9" secondAttribute="topMargin" constant="20" id="Xav-L0-AhO"/>
+                                                <constraint firstAttribute="bottom" secondItem="wfd-1B-mHI" secondAttribute="bottom" constant="20" id="fLS-dv-GHx"/>
+                                                <constraint firstItem="wfd-1B-mHI" firstAttribute="leading" secondItem="haQ-zT-uS9" secondAttribute="leading" constant="20" id="yee-OH-6PE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tCN-aG-a3V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NhM-zf-uCo" firstAttribute="top" secondItem="tCN-aG-a3V" secondAttribute="top" id="57S-GP-1Lu"/>
+                            <constraint firstItem="tCN-aG-a3V" firstAttribute="trailing" secondItem="NhM-zf-uCo" secondAttribute="trailing" id="HsJ-gg-N61"/>
+                            <constraint firstItem="tCN-aG-a3V" firstAttribute="bottom" secondItem="NhM-zf-uCo" secondAttribute="bottom" id="qL5-GW-SkK"/>
+                            <constraint firstItem="NhM-zf-uCo" firstAttribute="leading" secondItem="tCN-aG-a3V" secondAttribute="leading" id="wM0-6d-w6A"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grocery List" style="editor" id="Wfw-jI-MzC">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="DjS-LG-UA2">
+                            <connections>
+                                <segue destination="fdu-GW-p8Q" kind="presentation" id="a49-Cz-U7Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uaI-qK-F9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897" y="4"/>
+        </scene>
+        <!--Add Grocery View Controller-->
+        <scene sceneID="xSz-ow-M2Y">
+            <objects>
+                <viewController id="fdu-GW-p8Q" customClass="AddGroceryViewController" customModule="GroceryList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mYv-RJ-wFa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3V-M5-It8">
+                                <rect key="frame" x="40" y="87" width="310" height="310"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fni-Pl-dmP" userLabel="ivGroceryImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="310"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fni-Pl-dmP" secondAttribute="height" multiplier="1:1" id="OQo-TY-9pt"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ut7-QP-Fkq" userLabel="btnSelectImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="310"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Select Image">
+                                                    <attributes>
+                                                        <font key="NSFont" size="24" name="Avenir-Black"/>
+                                                        <font key="NSOriginalFont" size="24" name="Avenir-Book"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="selectImageDidPress:" destination="fdu-GW-p8Q" eventType="touchUpInside" id="KRI-zd-Hhx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fni-Pl-dmP" secondAttribute="bottom" id="2sC-qH-4qt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ut7-QP-Fkq" secondAttribute="trailing" id="3pm-jI-dKs"/>
+                                    <constraint firstItem="ut7-QP-Fkq" firstAttribute="leading" secondItem="j3V-M5-It8" secondAttribute="leading" id="Hya-JI-XXc"/>
+                                    <constraint firstItem="fni-Pl-dmP" firstAttribute="leading" secondItem="j3V-M5-It8" secondAttribute="leading" id="MYt-Eh-LLI"/>
+                                    <constraint firstAttribute="bottom" secondItem="ut7-QP-Fkq" secondAttribute="bottom" id="Mg5-bC-Wzd"/>
+                                    <constraint firstItem="ut7-QP-Fkq" firstAttribute="top" secondItem="j3V-M5-It8" secondAttribute="top" id="gCx-nV-9pD"/>
+                                    <constraint firstItem="fni-Pl-dmP" firstAttribute="top" secondItem="j3V-M5-It8" secondAttribute="top" id="nbN-Dd-sOT"/>
+                                    <constraint firstAttribute="trailing" secondItem="fni-Pl-dmP" secondAttribute="trailing" id="ntJ-Tb-ybB"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Grocery Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Old-ZB-a4C" userLabel="tfGroceryName">
+                                <rect key="frame" x="40" y="437" width="310" height="34"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDy-3g-q4q" userLabel="btnAddGrocery">
+                                <rect key="frame" x="40" y="511.00000000000006" width="310" height="38.666666666666686"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add Grocery">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Avenir-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addGroceryDidPress:" destination="fdu-GW-p8Q" eventType="touchUpInside" id="dcc-G5-dsH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cwY-9a-1Xn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="0.28915730119999999" green="0.64925742149999999" blue="0.49063140150000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aDy-3g-q4q" firstAttribute="top" secondItem="Old-ZB-a4C" secondAttribute="bottom" constant="40" id="9AC-pL-mHU"/>
+                            <constraint firstItem="Old-ZB-a4C" firstAttribute="top" secondItem="j3V-M5-It8" secondAttribute="bottom" constant="40" id="C1S-a8-5dn"/>
+                            <constraint firstItem="j3V-M5-It8" firstAttribute="top" secondItem="cwY-9a-1Xn" secondAttribute="top" constant="40" id="IlV-E4-RFs"/>
+                            <constraint firstItem="cwY-9a-1Xn" firstAttribute="trailing" secondItem="j3V-M5-It8" secondAttribute="trailing" constant="40" id="Oth-EV-O68"/>
+                            <constraint firstItem="j3V-M5-It8" firstAttribute="leading" secondItem="cwY-9a-1Xn" secondAttribute="leading" constant="40" id="TTH-aj-I05"/>
+                            <constraint firstItem="cwY-9a-1Xn" firstAttribute="trailing" secondItem="aDy-3g-q4q" secondAttribute="trailing" constant="40" id="afl-cm-rLZ"/>
+                            <constraint firstItem="aDy-3g-q4q" firstAttribute="leading" secondItem="cwY-9a-1Xn" secondAttribute="leading" constant="40" id="anB-oO-BKg"/>
+                            <constraint firstItem="Old-ZB-a4C" firstAttribute="leading" secondItem="cwY-9a-1Xn" secondAttribute="leading" constant="40" id="jNA-ew-rdL"/>
+                            <constraint firstItem="cwY-9a-1Xn" firstAttribute="trailing" secondItem="Old-ZB-a4C" secondAttribute="trailing" constant="40" id="myD-nu-sTv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ivGroceryImage" destination="fni-Pl-dmP" id="Ku8-Ct-ujb"/>
+                        <outlet property="tfGroceryName" destination="Old-ZB-a4C" id="zHJ-tP-xjt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9un-Ah-FbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pkB-1U-qMd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yd3-OH-HbH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6MR-7M-UEG">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PVR-9w-LZr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9c8-Um-nP0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.538461538461533" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
